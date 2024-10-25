@@ -6,6 +6,8 @@
     <title>Document</title>
 </head>
 <body>
+
+<!--HEADER-->
     <header>
         <h1>Auberge "Au Petit Dev"</h1>
         <nav>
@@ -16,22 +18,48 @@
                 <li><a href="#">Avis</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
-
-            <h2><section id="description">Description</section></h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit sapiente commodi, accusamus obcaecati ex neque. Exercitationem illo harum, cupiditate ad voluptatibus earum quo provident in qui asperiores reiciendis tenetur deleniti!</p>
-                <h3>Points Forts</h3>
-                <ul>
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                </ul>
-            <h2><section id="galerie">Galerie</section></h2>
-            <h2><section id="services">Services</section></h2>
-            <h2><section id="avis">Avis</section></h2>
-            <h2><section id="contact">Contact</section></h2>
         </nav>
     </header>
-    <main></main>
+    <main>
+        <h2><section id="description">Description</section></h2>
+        <p>Nichée au cœur d'un charmant village, notre auberge vous invite à découvrir un havre de paix où authenticité et confort se rencontrent. Dès votre arrivée, vous serez séduit par l'atmosphère conviviale et chaleureuse qui règne dans ce lieu unique. Nos chambres, décorées avec soin dans un style mêlant tradition et modernité, offrent un espace de détente parfait après une journée de découvertes ou de balades en nature. Le restaurant de l'auberge propose une cuisine locale de saison, préparée avec des produits frais du terroir, pour une expérience gastronomique authentique.
+
+            Que vous voyagiez en famille, entre amis, ou en couple, notre équipe accueillante est toujours prête à rendre votre séjour inoubliable. Profitez des espaces communs pour rencontrer d’autres voyageurs, d’un jardin calme pour vous détendre, et des conseils avisés de notre personnel pour explorer les trésors de la région. À l’auberge, vous n’êtes pas seulement un client : vous êtes un invité chez nous, et nous faisons en sorte que chaque séjour soit un souvenir précieux.</p>
+        <h3>Points Forts</h3>
+        <ul>
+            <li>Une atmosphère chaleureuse et accueillante où chaque invité se sent comme chez lui.</li>
+            <li>Des chambres décorées avec goût, alliant charme traditionnel et confort moderne, pour un séjour agréable.</li>
+            <li>Un restaurant qui met en avant les saveurs locales, avec des plats préparés à partir de produits frais et de saison.</li>
+        </ul>
+    <h2><section id="galerie">Galerie</section></h2>
+    <div class="images-galerie">
+        <img src="images/image1.jpg" alt="coeur graffiti" width="250px">
+        <img src="images/image2.jpg" alt="coeur graffiti" width="250px">
+        <img src="images/image3.jpg" alt="coeur graffiti" width="250px">
+    </div>
+    <h2><section id="services">Services et &Eacute;quipements</section></h2>
+        <ul>
+            <li><strong>Wi-Fi:</strong> Inclus</li>
+            <li><strong>Parking :</strong> Privé et sécurisé</li>
+            <li><strong>Petit-déjeuner :</strong> Disponible sur demande</li>
+            <li><strong>Piscine :</strong> Accès Libre</li>
+        </ul>
+    <h2><section id="avis">Avis</section></h2>
+        <blockquote>"L'auberge est pleine de charme, le personnel est aux petits soins, et le cadre est magnifique. Nous avons adoré les repas préparés avec des produits locaux et les conseils pour découvrir les environs. Nous reviendrons sans hésiter !""</i> - Madame Laporte</blockquote>
+        <blockquote>"Une ambiance chaleureuse et authentique qui fait toute la différence. On se sent accueilli comme à la maison ! Les chambres sont confortables et décorées avec goût, et la petite attention à notre arrivée était un vrai plus. Merci à toute l'équipe pour ce moment unique !"</i> - Monsieur DUPONT</blockquote>
+
+
+    <h2><section id="contact">Contact</section></h2>
+        <form action="send_mail.php" method="post">
+            <label for="name">Nom : </label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Your email..">
+            <label for="subject">Message</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:100px"></textarea>
+            <button>Envoyer</button>
+        </form>
+    </main>
     <footer></footer>
 </body>
 </html>
