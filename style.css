@@ -1,0 +1,12 @@
+h1{
+    color: red;
+    display: block;
+    border: 5px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    text-align: center;
+}
+
+#description{
+    color: blue;
+}
