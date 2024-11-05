@@ -1,75 +1,233 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Au Petit Dev</title>
+    <title>Le Codeur Cosy</title>
+    <link rel="stylesheet" href="_styles/style.css">
+    <script src="script.js" defer></script>
 </head>
-<body>
 
-<!-- HEADER -->
+<body>
+    <!-- HEADER -->
     <header>
-        <h1>Auberge "Au Petit Dev"</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Description</a></li>
-                <li><a href="#">Galerie</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Avis</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="logo">
+            <img src="images/logo blanc.png" alt="Logo Le Codeur Cosy">
+        </div>
+        <div class="header-right">
+            <div class="social-icons">
+                <a href="mailto:tonemail@example.com"><img src="images/email blanc.png" alt="Email"></a>
+                <a href="https://www.facebook.com/tonprofil"><img src="images/facebook blanc.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com/tonprofil"><img src="images/instagram blanc.png" alt="Instagram"></a>
+                <a href="https://www.linkedin.com/in/tonprofil"><img src="images/linkedin blanc.png" alt="LinkedIn"></a>
+            </div>
+            <div class="burger-icon" onclick="toggleMenu()">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
     </header>
 
-    <main>
-<!-- DESCRIPTION -->
-        <h2><section id="descriptions">Description</section></h2>
-        <p id="description" style="color:#990000; font-size:14px;">Nichée au cœur d'un charmant village, notre auberge vous invite à découvrir un havre de paix où authenticité et confort se rencontrent. Dès votre arrivée, vous serez séduit par l'atmosphère conviviale et chaleureuse qui règne dans ce lieu unique. Nos chambres, décorées avec soin dans un style mêlant tradition et modernité, offrent un espace de détente parfait après une journée de découvertes ou de balades en nature. Le restaurant de l'auberge propose une cuisine locale de saison, préparée avec des produits frais du terroir, pour une expérience gastronomique authentique.
-
-            Que vous voyagiez en famille, entre amis, ou en couple, notre équipe accueillante est toujours prête à rendre votre séjour inoubliable. Profitez des espaces communs pour rencontrer d’autres voyageurs, d’un jardin calme pour vous détendre, et des conseils avisés de notre personnel pour explorer les trésors de la région. À l’auberge, vous n’êtes pas seulement un client : vous êtes un invité chez nous, et nous faisons en sorte que chaque séjour soit un souvenir précieux.</p>
-        <h3>Points Forts</h3>
+    <!-- MENU -->
+    <nav id="menu">
         <ul>
-            <li>Une atmosphère chaleureuse et accueillante où chaque invité se sent comme chez lui.</li>
-            <li>Des chambres décorées avec goût, alliant charme traditionnel et confort moderne, pour un séjour agréable.</li>
-            <li>Un restaurant qui met en avant les saveurs locales, avec des plats préparés à partir de produits frais et de saison.</li>
+            <li><a href="#"><img src="images/accueil.png" alt="Accueil">Accueil</a></li>
+            <li><a href="#description"><img src="images/description.png" alt="Description">Description</a></li>
+            <li><a href="#chambre"><img src="images/lit.png" alt="Chambre">Chambre</a></li>
+            <li><a href="#galerie"><img src="images/galerie.png" alt="Galerie">Galerie</a></li>
+            <li><a href="#services"><img src="images/services.png" alt="Services">Services</a></li>
+            <li><a href="#avis"><img src="images/avis.png" alt="Avis">Avis</a></li>
+            <li><a href="#apropos"><img src="images/a propos.png" alt="À propos">À propos</a></li>
+            <li><a href="#contact"><img src="images/contact.png" alt="Contact">Contact</a></li>
         </ul>
+    </nav>
 
-<!-- GALERIE -->
-    <h2><section id="galerie">Galerie</section></h2>
-    <div class="images-galerie">
-        <img src="images/image1.jpg" alt="coeur graffiti" width="250px">
-        <img src="images/image2.jpg" alt="coeur graffiti" width="250px">
-        <img src="images/image3.jpg" alt="coeur graffiti" width="250px">
-    </div>
+    <!-- BANNIÈRE -->
+    <div class="banner"></div>
 
-<!-- SERVICES -->
-    <h2><section id="services">Services et &Eacute;quipements</section></h2>
-        <ul>
-            <li><strong>Wi-Fi:</strong> Inclus</li>
-            <li><strong>Parking :</strong> Privé et sécurisé</li>
-            <li><strong>Petit-déjeuner :</strong> Disponible sur demande</li>
-            <li><strong>Piscine :</strong> Accès Libre</li>
-        </ul>
+    <!-- SECTIONS -->
+    <section id="description">
+        <div class="text">
+            <h2>Description</h2>
+            <p><em>Nichée au cœur d’un cadre apaisant, notre auberge est un véritable havre de paix, conçu spécialement
+                    pour les développeurs web et les passionnés d'informatique. À Le Codeur Cosy, nous comprenons
+                    l'importance de trouver un environnement propice au travail et à la créativité.
 
-<!-- AVIS -->
-    <h2><section id="avis">Avis</section></h2>
-        <blockquote>"L'auberge est pleine de charme, le personnel est aux petits soins, et le cadre est magnifique. Nous avons adoré les repas préparés avec des produits locaux et les conseils pour découvrir les environs. Nous reviendrons sans hésiter !""</i> - Madame Laporte</blockquote>
-        <blockquote>"Une ambiance chaleureuse et authentique qui fait toute la différence. On se sent accueilli comme à la maison ! Les chambres sont confortables et décorées avec goût, et la petite attention à notre arrivée était un vrai plus. Merci à toute l'équipe pour ce moment unique !"</i> - Monsieur DUPONT</blockquote>
+                    Notre établissement offre des chambres confortables, équipées de tout le nécessaire pour vous
+                    permettre de coder dans la sérénité. Chaque espace est soigneusement pensé pour allier
+                    fonctionnalité et confort, avec un accès Wi-Fi haut débit et des espaces de travail adaptés.
 
-<!-- CONTACT -->
-    <h2><section id="contact">Contact</section></h2>
-        <h3><strong>Contactez-Nous</strong></h3>
-        <form action="send_mail.php" method="post">
-            <label for="name">Nom : </label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="Your email..">
-            <label for="subject">Message</label>
-            <textarea id="subject" name="subject" placeholder="Write something.." style="height:100px"></textarea>
-            <button>Envoyer</button>
-        </form>
-    </main>
-    <footer></footer>
+                    Profitez de notre salon commun, où vous pourrez échanger des idées avec d'autres passionnés ou
+                    simplement vous détendre après une longue journée de travail. Nous offrons également des pauses café
+                    et des collations pour vous ressourcer tout au long de la journée.
+
+                    Le Codeur Cosy n'est pas seulement un lieu de séjour, c'est une communauté. Que vous soyez en quête
+                    d'inspiration ou que vous souhaitiez vous concentrer sur vos projets, nous sommes là pour vous
+                    accompagner dans votre aventure.
+
+                    Venez découvrir un lieu où la technologie et le confort se rencontrent pour créer une expérience
+                    unique. Réservez votre séjour dès aujourd'hui et laissez-nous vous accueillir dans notre univers
+                    chaleureux et stimulant !</em></p>
+        </div>
+        <img src="images/description.jpg" alt="Description Image">
+    </section>
+
+    <section id="chambre" class="reverse">
+        <img src="images/chambre.jpg" alt="Chambre Image">
+        <div class="text">
+            <h2>Chambre</h2>
+            <p><em>À Le Codeur Cosy, nous vous offrons un séjour inoubliable dans un cadre chaleureux et accueillant. Nos chambres, soigneusement décorées, allient confort moderne et charme traditionnel, créant ainsi un environnement idéal pour se détendre après une journée d'exploration.
+
+                <b>Chambre Standard</b>
+                Nos chambres standard sont équipées de lits douillets et de tout le nécessaire pour un séjour agréable. Chaque chambre dispose d'une salle de bain privative, d'une télévision à écran plat et d'une connexion Wi-Fi gratuite. Que vous soyez en voyage d'affaires ou en escapade romantique, vous trouverez ici l'endroit parfait pour vous reposer.
+                
+                <b>Chambre Supérieure</b>
+                Pour une expérience encore plus confortable, choisissez nos chambres supérieures. Spacieuses et lumineuses, elles offrent une vue imprenable sur les paysages environnants. Vous pourrez profiter d’un coin salon pour vous détendre et d’un minibar pour un petit rafraîchissement. Chaque détail est pensé pour rendre votre séjour des plus agréables.
+                
+                <b>Suite</b>
+                Offrez-vous le luxe de notre suite, idéale pour les séjours prolongés ou les occasions spéciales. Dotée d'une chambre séparée et d'un espace de vie confortable, cette suite est équipée d'une baignoire à remous pour des moments de détente inégalés. Un service de petit-déjeuner en chambre peut être organisé pour commencer votre journée de manière raffinée.
+                
+                Nous serions ravis de vous accueillir dans nos chambres où le confort et l'hospitalité sont à l’honneur. Réservez dès maintenant votre séjour et vivez une expérience unique à Le Codeur Cosy !</em></p>
+        </div>
+    </section>
+
+    <section id="galerie">
+        <div class="text">
+            <h2>Galerie</h2>
+            <p><em>Bienvenue dans la galerie photos de Le Codeur Cosy, où nous vous invitons à découvrir l'ambiance chaleureuse et accueillante de notre auberge. Chaque image capture l'essence de notre établissement, des chambres confortables aux espaces communs conviviaux, en passant par les magnifiques paysages environnants.
+
+                <b>Un Regard sur Notre Auberge</b>
+                Parcourez notre sélection de photos pour avoir un aperçu de nos chambres, chacune conçue pour vous offrir le maximum de confort. Vous pourrez également admirer les espaces de détente, parfaits pour se relaxer après une journée bien remplie.
+                
+                <b>Moments Partagés</b>
+                La galerie met également en lumière les moments mémorables vécus par nos invités. Des petits-déjeuners copieux aux événements spéciaux organisés au sein de notre auberge, chaque photo raconte une histoire et reflète notre engagement à offrir une expérience inoubliable.
+                
+                <b>Inspiration pour Votre Séjour</b>
+                Que vous soyez à la recherche d’un refuge tranquille ou d’un lieu convivial pour passer du temps en famille ou entre amis, notre galerie vous donnera un avant-goût de ce qui vous attend lors de votre séjour. Laissez-vous inspirer par les images et imaginez vos prochaines vacances à Le Codeur Cosy.
+                
+                Nous sommes impatients de vous accueillir et de vous faire vivre ces moments précieux en personne. Explorez notre galerie et préparez-vous à créer vos propres souvenirs inoubliables !</em></p>
+        </div>
+        <img src="images/galerie.jpg" alt="Galerie Image">
+    </section>
+
+    <section id="services" class="reverse">
+        <img src="images/services.jpg" alt="Mes services">
+        <div class="text">
+            <h2>Services</h2>
+            <p><em>Au Codeur Cosy, nous nous engageons à offrir une expérience inoubliable à tous nos invités en mettant à leur disposition une gamme de services conçus pour répondre à tous leurs besoins. Que vous soyez ici pour le travail ou pour le loisir, notre auberge est équipée pour vous garantir un séjour confortable et agréable.
+
+                <b>Hébergement Confortable</b>
+                Nous proposons des chambres spacieuses et bien aménagées, alliant confort moderne et charme authentique. Chaque chambre est équipée de lits douillets, d'une connexion Wi-Fi gratuite, et d'un espace de travail idéal pour les professionnels.
+                
+                <b>Petit Déjeuner Gourmand</b>
+                Commencez votre journée du bon pied avec notre petit déjeuner continental servi chaque matin. Vous y trouverez une variété de produits frais, des fruits de saison aux viennoiseries croustillantes, ainsi que du café et des thés sélectionnés pour leur qualité.
+                
+                <b>Espaces Communs</b>
+                Profitez de nos espaces communs conçus pour la détente et le partage. Que ce soit dans notre salon confortable ou sur notre terrasse ensoleillée, vous pourrez vous relaxer, rencontrer d'autres voyageurs, ou simplement savourer un bon livre.
+                
+                <b>Service de Réservation d'Activités</b>
+                Nous sommes à votre disposition pour vous aider à organiser vos activités durant votre séjour. Que ce soit des visites locales, des randonnées, ou des événements culturels, notre équipe se fera un plaisir de vous fournir des recommandations et d'effectuer des réservations pour vous.
+                
+                <b>Wi-fi haut débit gratuit</b>
+                Restez connecté avec notre connexion Wi-Fi haut débit disponible dans toute l'auberge, que vous soyez en train de travailler ou de partager vos moments préférés sur les réseaux sociaux.
+                
+                Nous nous efforçons de créer une atmosphère chaleureuse et accueillante pour que vous vous sentiez chez vous, loin de chez vous. N'hésitez pas à nous faire part de vos besoins, et nous ferons tout notre possible pour les satisfaire !</em></p>
+        </div>
+    </section>
+
+    <section id="avis">
+        <div class="text">
+            <h2>Avis</h2>
+            <p><em>
+                ⭐⭐⭐⭐⭐
+                <b>Jean-Pierre D.</b>
+                "Un séjour merveilleux à Le Codeur Cosy ! Les chambres sont spacieuses, confortables et impeccablement propres. Le personnel est accueillant et toujours prêt à vous aider. La proximité des attractions locales et le calme de l'environnement en font un lieu idéal pour se détendre. Je recommande vivement cette auberge !"
+<br>                
+
+                ⭐⭐⭐⭐
+               <b> Sophie M.</b>
+                "J'ai passé un excellent week-end à Le Codeur Cosy. La décoration est charmante et donne une ambiance chaleureuse. Le petit déjeuner était délicieux, avec des produits frais. Mon seul regret a été de ne pas rester plus longtemps ! Je reviendrai sans hésiter."
+<br>
+            
+                ⭐⭐⭐⭐⭐
+                <b>Marc L.</b>
+                "Le Codeur Cosy est un vrai bijou ! Les services offerts sont au-delà de mes attentes, et la galerie photos met en valeur l'expérience unique que l'on y vit. J'ai particulièrement apprécié le calme des lieux et la qualité du service. Un grand merci à toute l'équipe !"</em></p>
+        </div>
+        <img src="images/avis.jpg" alt="Avis Image">
+    </section>
+
+    <section id="apropos" class="reverse">
+        <img src="images/a propos.jpg" alt="À propos Image">
+        <div class="text">
+            <h2>À propos</h2>
+            <p><em>Le Codeur Cosy a été fondé avec une passion pour l'hospitalité et l'innovation. Nichée dans un écrin de verdure, notre auberge a vu le jour grâce à l'idée de créer un espace où les développeurs et les amateurs de technologie peuvent se ressourcer et s'inspirer.
+
+                Depuis ses débuts, Le Codeur Cosy s'est transformée en un lieu de rencontre pour les esprits créatifs, alliant confort moderne et ambiance conviviale. Chaque chambre est soigneusement aménagée pour offrir un refuge paisible, tout en étant équipée des dernières technologies pour répondre aux besoins des professionnels du numérique.
+                
+                Notre mission est de fournir un cadre accueillant qui favorise la détente et la productivité, tout en permettant à nos invités de découvrir les beautés environnantes. Que vous soyez ici pour travailler sur un projet, participer à un séminaire ou simplement échapper au quotidien, Le Codeur Cosy est l'endroit idéal pour allier travail et plaisir.
+                
+                Venez découvrir notre histoire et écrire la vôtre dans cet endroit unique !</em></p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="text">
+            <h2>Contact</h2>
+            <p><em>N'hésitez pas à nous laisser tout message que vous jugerez utile. Nous vous répondrons dans les meilleurs délais</em></p>
+            <form action="votre_script_de_traitement.php" method="POST">
+                <div class="form-group">
+                    <label for="name">Nom :</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email :</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message :</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit">Envoyer</button>
+            </form>
+        </div>
+        <img src="images/contact.jpg" alt="contact">
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-column">
+            <img src="images/logo blanc.png" alt="Logo Le Codeur Cosy" class="footer-logo">
+            <!-- Ajout de la classe footer-logo -->
+        </div>
+        <div class="footer-column">
+            <h4>Nos Services</h4>
+            <ul>
+                <li><a href="#">Chambres</a></li>
+                <li><a href="#">Petit Déjeuner</a></li>
+                <li><a href="#">Wi-Fi</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h4>Coordonnées</h4>
+            <p>Adresse : 123 Rue Principale</p>
+            <p>Email : <a href="mailto:tonemail@example.com">tonemail@example.com</a></p>
+            <p>Téléphone : +33 1 23 45 67 89</p>
+        </div>
+        <div class="footer-column">
+            <h4>Pages Légales</h4>
+            <ul>
+                <li><a href="#">Mentions Légales</a></li>
+                <li><a href="#">Politique de Confidentialité</a></li>
+                <li><a href="#">CGU</a></li>
+            </ul>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/tonprofil"><img src="images/facebook-blanc.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com/tonprofil"><img src="images/instagram-blanc.png" alt="Instagram"></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
